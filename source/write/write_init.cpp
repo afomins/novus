@@ -1,0 +1,191 @@
+ 
+
+
+#include "write\write.h"
+
+noVfontInstance		font[FONT_MAX_NUM];
+
+void writeInit()
+{
+	int		loop;
+
+	for(loop = 0; loop < 256; loop++)
+	{
+		font[0].symbolWidth[loop]	=	8;
+		font[1].symbolWidth[loop]	=	8;
+	}
+
+	font[0].width					=	16;
+	font[0].heigth					=	16;
+
+	font[1].width					=	16;
+	font[1].heigth					=	16;
+
+	font[0].fontTex					=	 0;
+	font[1].fontTex					=	 2;
+
+	font[0].symbolWidth[0]			=	 4;
+	font[0].symbolWidth[1]			=	 4;
+	font[0].symbolWidth[2]			=	 5;
+	font[0].symbolWidth[3]			=	 6;
+	font[0].symbolWidth[4]			=	 6;
+	font[0].symbolWidth[5]			=	 4;
+	font[0].symbolWidth[6]			=	 6;
+	font[0].symbolWidth[7]			=	 2;
+	font[0].symbolWidth[8]			=	 3;
+	font[0].symbolWidth[9]			=	 3;
+	font[0].symbolWidth[10]			=	 3;
+	font[0].symbolWidth[11]			=	 3;
+	font[0].symbolWidth[12]			=	 1;
+	font[0].symbolWidth[13]			=	 4;
+	font[0].symbolWidth[14]			=	 2;
+	font[0].symbolWidth[15]			=	 4;
+	font[0].symbolWidth[16]			=	 5;
+	font[0].symbolWidth[17]			=	 4;
+	font[0].symbolWidth[18]			=	 5;
+	font[0].symbolWidth[19]			=	 5;
+	font[0].symbolWidth[20]			=	 5;
+	font[0].symbolWidth[21]			=	 5;
+	font[0].symbolWidth[22]			=	 5;
+	font[0].symbolWidth[23]			=	 5;
+	font[0].symbolWidth[24]			=	 5;
+	font[0].symbolWidth[25]			=	 5;
+	font[0].symbolWidth[26]			=	 2;
+	font[0].symbolWidth[27]			=	 2;
+	font[0].symbolWidth[28]			=	 4;
+	font[0].symbolWidth[29]			=	 4;
+	font[0].symbolWidth[30]			=	 4;
+	font[0].symbolWidth[31]			=	 5;
+	font[0].symbolWidth[32]			=	 5;
+	font[0].symbolWidth[33]			=	 5;
+	font[0].symbolWidth[34]			=	 5;
+	font[0].symbolWidth[35]			=	 5;
+	font[0].symbolWidth[36]			=	 5;
+	font[0].symbolWidth[37]			=	 4;
+	font[0].symbolWidth[38]			=	 4;
+	font[0].symbolWidth[39]			=	 5;
+	font[0].symbolWidth[40]			=	 5;
+	font[0].symbolWidth[41]			=	 3;
+	font[0].symbolWidth[42]			=	 5;
+	font[0].symbolWidth[43]			=	 4;
+	font[0].symbolWidth[44]			=	 4;
+	font[0].symbolWidth[45]			=	 5;
+	font[0].symbolWidth[46]			=	 5;
+	font[0].symbolWidth[47]			=	 5;
+	font[0].symbolWidth[48]			=	 5;
+	font[0].symbolWidth[49]			=	 6;
+	font[0].symbolWidth[50]			=	 5;
+	font[0].symbolWidth[51]			=	 6;
+	font[0].symbolWidth[52]			=	 5;
+	font[0].symbolWidth[53]			=	 5;
+	font[0].symbolWidth[54]			=	 6;
+	font[0].symbolWidth[55]			=	 7;
+	font[0].symbolWidth[56]			=	 5;
+	font[0].symbolWidth[57]			=	 6;
+	font[0].symbolWidth[58]			=	 5;
+	font[0].symbolWidth[59]			=	 3;
+	font[0].symbolWidth[60]			=	 4;
+	font[0].symbolWidth[61]			=	 3;
+	font[0].symbolWidth[62]			=	 5;
+	font[0].symbolWidth[63]			=	 4;
+	font[0].symbolWidth[64]			=	 2;
+	font[0].symbolWidth[65]			=	 6;
+	font[0].symbolWidth[66]			=	 5;
+	font[0].symbolWidth[67]			=	 5;
+	font[0].symbolWidth[68]			=	 5;
+	font[0].symbolWidth[69]			=	 5;
+	font[0].symbolWidth[70]			=	 4;
+	font[0].symbolWidth[71]			=	 5;
+	font[0].symbolWidth[72]			=	 5;
+	font[0].symbolWidth[73]			=	 1;
+	font[0].symbolWidth[74]			=	 3;
+	font[0].symbolWidth[75]			=	 4;
+	font[0].symbolWidth[76]			=	 3;
+	font[0].symbolWidth[77]			=	 7;
+	font[0].symbolWidth[78]			=	 5;
+	font[0].symbolWidth[79]			=	 5;
+	font[0].symbolWidth[80]			=	 5;
+	font[0].symbolWidth[81]			=	 5;
+	font[0].symbolWidth[82]			=	 3;
+	font[0].symbolWidth[83]			=	 5;
+	font[0].symbolWidth[84]			=	 4;
+	font[0].symbolWidth[85]			=	 5;
+	font[0].symbolWidth[86]			=	 5;
+	font[0].symbolWidth[87]			=	 5;
+	font[0].symbolWidth[88]			=	 3;
+	font[0].symbolWidth[89]			=	 5;
+	font[0].symbolWidth[90]			=	 5;
+	font[0].symbolWidth[91]			=	 3;
+	font[0].symbolWidth[92]			=	 1;
+	font[0].symbolWidth[93]			=	 3;
+	font[0].symbolWidth[94]			=	 7;
+	font[0].symbolWidth[95]			=	 5;
+	font[0].symbolWidth[96]			=	 5;
+	font[0].symbolWidth[97]			=	 5;
+	font[0].symbolWidth[98]			=	 5;
+	font[0].symbolWidth[99]			=	 4;
+	font[0].symbolWidth[100]		=	 6;
+	font[0].symbolWidth[101]		=	 5;
+	font[0].symbolWidth[102]		=	 5;
+	font[0].symbolWidth[103]		=	 5;
+	font[0].symbolWidth[104]		=	 5;
+	font[0].symbolWidth[105]		=	 5;
+	font[0].symbolWidth[106]		=	 4;
+	font[0].symbolWidth[107]		=	 5;
+	font[0].symbolWidth[108]		=	 5;
+	font[0].symbolWidth[109]		=	 5;
+	font[0].symbolWidth[110]		=	 5;
+	font[0].symbolWidth[111]		=	 5;
+	font[0].symbolWidth[112]		=	 5;
+	font[0].symbolWidth[113]		=	 5;
+	font[0].symbolWidth[114]		=	 5;
+	font[0].symbolWidth[115]		=	 6;
+	font[0].symbolWidth[116]		=	 7;	//	ÔÎÌÈÍ
+	font[0].symbolWidth[117]		=	 5;
+	font[0].symbolWidth[118]		=	 6;
+	font[0].symbolWidth[119]		=	 5;
+	font[0].symbolWidth[120]		=	 5;
+	font[0].symbolWidth[121]		=	 6;
+	font[0].symbolWidth[122]		=	 6;
+	font[0].symbolWidth[123]		=	 7;
+	font[0].symbolWidth[124]		=	 5;
+	font[0].symbolWidth[125]		=	 5;
+	font[0].symbolWidth[126]		=	 6;
+	font[0].symbolWidth[127]		=	 5;
+	font[0].symbolWidth[128]		=	 6;
+	font[0].symbolWidth[129]		=	 5;
+	font[0].symbolWidth[130]		=	 5;
+	font[0].symbolWidth[131]		=	 3;
+	font[0].symbolWidth[132]		=	 5;
+	font[0].symbolWidth[133]		=	 5;
+	font[0].symbolWidth[134]		=	 5;
+	font[0].symbolWidth[135]		=	 5;
+	font[0].symbolWidth[136]		=	 5;
+	font[0].symbolWidth[137]		=	 5;
+	font[0].symbolWidth[138]		=	 4;
+	font[0].symbolWidth[139]		=	 4;
+	font[0].symbolWidth[140]		=	 5;
+	font[0].symbolWidth[141]		=	 4;
+	font[0].symbolWidth[142]		=	 5;
+	font[0].symbolWidth[143]		=	 4;	
+	font[0].symbolWidth[144]		=	 5;
+	font[0].symbolWidth[145]		=	 5;
+	font[0].symbolWidth[146]		=	 3;
+	font[0].symbolWidth[147]		=	 5;
+	font[0].symbolWidth[148]		=	 5;
+	font[0].symbolWidth[149]		=	 3;
+	font[0].symbolWidth[150]		=	 6;
+	font[0].symbolWidth[151]		=	 5;
+	font[0].symbolWidth[152]		=	 5;
+	font[0].symbolWidth[153]		=	 6;
+	font[0].symbolWidth[154]		=	 5;
+	font[0].symbolWidth[155]		=	 6;
+	font[0].symbolWidth[156]		=	 4;
+	font[0].symbolWidth[157]		=	 4;
+	font[0].symbolWidth[158]		=	 5;
+	font[0].symbolWidth[159]		=	 5;
+	font[0].symbolWidth[160]		=	 5;
+	font[0].symbolWidth[161]		=	 5;
+	font[0].symbolWidth[162]		=	 3;
+	font[0].symbolWidth[163]		=	 3;
+}
