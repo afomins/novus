@@ -1,5 +1,5 @@
 # Intro
-*"Novus"* is my first 3D game prototype that I created while leaning `C` in univercity back in 2002. This is totally unplayable and bad-looking game that has absolutely no value and I'm keeping it here only for sentimental reasons.
+*"Novus"* is my first 3D game prototype that I created while leaning `C` in univercity back in 2003. This is totally unplayable and bad-looking game that has absolutely no value and I'm keeping it here only for sentimental reasons.
 
 If you are unfamiliar with *novus* rules then you can read about here -> https://en.wikipedia.org/wiki/Novuss
 
