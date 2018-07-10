@@ -10,7 +10,7 @@ If you are unfamiliar with *novus* rules then you can read about here -> https:/
 # GIFs
 | 1st | 2nd |
 | --|--|
-| <img src="https://github.com/afomins/novus/blob/master/gifs/novus_000.gif" width="400"> | <img src="https://github.com/afomins/novus/blob/master/gifs/novus_000.gif" width="400"> |
+| <img src="https://github.com/afomins/novus/blob/master/gifs/novus_000.gif" width="315"> | <img src="https://github.com/afomins/novus/blob/master/gifs/novus_001.gif" width="315"> |
 
 # Bild instructions
  * Clone `git@github.com:afomins/novus.git`
