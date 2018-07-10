@@ -8,7 +8,7 @@ If you are unfamiliar with *novus* rules then you can read about here -> https:/
  * Windows ZIP - https://github.com/afomins/novus/releases/download/v0.1.0/novus-win32.zip
  
 # GIFs
-| 1st | 2nd |
+| Intro and main menu | Moving puck |
 | --|--|
 | <img src="https://github.com/afomins/novus/blob/master/gifs/novus_000.gif" width="315"> | <img src="https://github.com/afomins/novus/blob/master/gifs/novus_001.gif" width="315"> |
 
